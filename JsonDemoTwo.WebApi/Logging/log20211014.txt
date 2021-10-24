@@ -1,0 +1,142 @@
+10/14/2021 08:36:53 +02:00 Application Starting
+10/14/2021 08:36:54 +02:00 Now listening on: "https://localhost:5001"
+10/14/2021 08:36:54 +02:00 Now listening on: "http://localhost:5000"
+10/14/2021 08:36:54 +02:00 Application started. Press Ctrl+C to shut down.
+10/14/2021 08:36:54 +02:00 Hosting environment: "Development"
+10/14/2021 08:36:54 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/14/2021 08:36:54 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/14/2021 08:36:55 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 374.6228ms
+10/14/2021 08:36:56 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/14/2021 08:36:56 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 188.7223ms
+10/14/2021 08:37:17 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/api/Photos - -
+10/14/2021 08:37:17 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/14/2021 08:37:17 +02:00 Route matched with "{action = \"GetAllPhotos\", controller = \"Photos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPhotos()" on controller "JsonDemoTwo.Controllers.PhotosController" ("JsonDemoTwo.WebApi").
+10/14/2021 08:37:19 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/14/2021 08:37:19 +02:00 Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photo] AS [p]"
+10/14/2021 08:37:19 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.PhotoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/14/2021 08:37:20 +02:00 Executed action "JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)" in 2084.6517ms
+10/14/2021 08:37:20 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/14/2021 08:37:20 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/api/Photos - - - 200 - application/json;+charset=utf-8 2251.2622ms
+10/14/2021 08:37:27 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/api/Users - -
+10/14/2021 08:37:27 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)"'
+10/14/2021 08:37:27 +02:00 Route matched with "{action = \"GetUsers\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers()" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/14/2021 08:37:27 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/14/2021 08:37:27 +02:00 Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[AddressId], [u].[CompanyId], [u].[Email], [u].[Name], [u].[Phone], [u].[UserName], [u].[Website]
+FROM [User] AS [u]"
+10/14/2021 08:37:27 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.UserDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/14/2021 08:37:27 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)" in 50.2048ms
+10/14/2021 08:37:27 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)"'
+10/14/2021 08:37:27 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/api/Users - - - 200 - application/json;+charset=utf-8 58.9963ms
+10/14/2021 08:37:43 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/api/Users application/json 361
+10/14/2021 08:37:43 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.PostUser (JsonDemoTwo.WebApi)"'
+10/14/2021 08:37:43 +02:00 Route matched with "{action = \"PostUser\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostUser(JsonDemoTwo.Models.Entities.User)" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/14/2021 08:37:43 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/14/2021 08:37:43 +02:00 Executed DbCommand ("46"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Address] ([City], [Street], [Suite], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Address]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/14/2021 08:37:43 +02:00 Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Company] ([Bs], [CatchPhrase], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Company]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/14/2021 08:37:43 +02:00 Executed DbCommand ("12"ms) [Parameters=["@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 55), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([AddressId], [CompanyId], [Email], [Name], [Phone], [UserName], [Website])
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/14/2021 08:37:43 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.UserDto"'.
+10/14/2021 08:37:43 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.PostUser (JsonDemoTwo.WebApi)" in 500.4233ms
+10/14/2021 08:37:43 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.PostUser (JsonDemoTwo.WebApi)"'
+10/14/2021 08:37:43 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/api/Users application/json 361 - 200 - application/json;+charset=utf-8 517.5275ms
+10/14/2021 09:05:05 +02:00 Application is shutting down...
+10/14/2021 09:14:23 +02:00 Application Starting
+10/14/2021 09:14:24 +02:00 Now listening on: "https://localhost:5001"
+10/14/2021 09:14:24 +02:00 Now listening on: "http://localhost:5000"
+10/14/2021 09:14:24 +02:00 Application started. Press Ctrl+C to shut down.
+10/14/2021 09:14:24 +02:00 Hosting environment: "Development"
+10/14/2021 09:14:24 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/14/2021 09:14:25 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/14/2021 09:14:25 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 218.2424ms
+10/14/2021 09:14:25 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/14/2021 09:14:26 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.0051ms
+10/14/2021 09:14:30 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/api/Albums - -
+10/14/2021 09:14:30 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/14/2021 09:14:30 +02:00 Route matched with "{action = \"GetAlbums\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAlbums()" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/14/2021 09:14:32 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/14/2021 09:14:32 +02:00 Executed DbCommand ("57"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Title], [a].[UserId]
+FROM [Album] AS [a]"
+10/14/2021 09:14:32 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.AlbumDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/14/2021 09:14:32 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)" in 1942.7364ms
+10/14/2021 09:14:32 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/14/2021 09:14:32 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/api/Albums - - - 200 - application/json;+charset=utf-8 2037.6784ms
+10/14/2021 09:14:55 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/api/Albums application/json 462
+10/14/2021 09:14:55 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.PostAlbum (JsonDemoTwo.WebApi)"'
+10/14/2021 09:14:55 +02:00 Route matched with "{action = \"PostAlbum\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostAlbum(JsonDemoTwo.Models.Entities.Album)" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/14/2021 09:14:55 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/14/2021 09:14:56 +02:00 Executed DbCommand ("27"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Address] ([City], [Street], [Suite], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Address]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/14/2021 09:14:56 +02:00 Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Company] ([Bs], [CatchPhrase], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Company]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/14/2021 09:14:56 +02:00 Executed DbCommand ("3"ms) [Parameters=["@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 55), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([AddressId], [CompanyId], [Email], [Name], [Phone], [UserName], [Website])
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/14/2021 09:14:56 +02:00 Executed DbCommand ("5"ms) [Parameters=["@p10='?' (Size = 4000), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Album] ([Title], [UserId])
+VALUES (@p10, @p11);
+SELECT [Id]
+FROM [Album]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/14/2021 09:14:56 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.AlbumDto"'.
+10/14/2021 09:14:56 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.PostAlbum (JsonDemoTwo.WebApi)" in 500.9228ms
+10/14/2021 09:14:56 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.PostAlbum (JsonDemoTwo.WebApi)"'
+10/14/2021 09:14:56 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/api/Albums application/json 462 - 200 - application/json;+charset=utf-8 520.5301ms
+10/14/2021 09:18:25 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/api/Photos - -
+10/14/2021 09:18:25 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/14/2021 09:18:25 +02:00 Route matched with "{action = \"GetAllPhotos\", controller = \"Photos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPhotos()" on controller "JsonDemoTwo.Controllers.PhotosController" ("JsonDemoTwo.WebApi").
+10/14/2021 09:18:25 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/14/2021 09:18:25 +02:00 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photo] AS [p]"
+10/14/2021 09:18:25 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.PhotoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/14/2021 09:18:25 +02:00 Executed action "JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)" in 22.8375ms
+10/14/2021 09:18:25 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/14/2021 09:18:25 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/api/Photos - - - 200 - application/json;+charset=utf-8 27.1457ms
+10/14/2021 09:18:26 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/api/Photos - -
+10/14/2021 09:18:26 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/14/2021 09:18:26 +02:00 Route matched with "{action = \"GetAllPhotos\", controller = \"Photos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPhotos()" on controller "JsonDemoTwo.Controllers.PhotosController" ("JsonDemoTwo.WebApi").
+10/14/2021 09:18:26 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/14/2021 09:18:26 +02:00 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photo] AS [p]"
+10/14/2021 09:18:26 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.PhotoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/14/2021 09:18:26 +02:00 Executed action "JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)" in 6.0797ms
+10/14/2021 09:18:26 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/14/2021 09:18:26 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/api/Photos - - - 200 - application/json;+charset=utf-8 16.3238ms
+10/14/2021 09:19:22 +02:00 Application is shutting down...

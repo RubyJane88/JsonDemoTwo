@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDemoTwo.WebApi", "JsonDemoTwo.WebApi\JsonDemoTwo.WebApi.csproj", "{D1C32695-3090-48C3-86C4-74F641945885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit.Tests", "Unit.Tests\Unit.Tests.csproj", "{6E965DFF-3084-41BF-89CA-D0E5F24FBF42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1C32695-3090-48C3-86C4-74F641945885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C32695-3090-48C3-86C4-74F641945885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C32695-3090-48C3-86C4-74F641945885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C32695-3090-48C3-86C4-74F641945885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E965DFF-3084-41BF-89CA-D0E5F24FBF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E965DFF-3084-41BF-89CA-D0E5F24FBF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E965DFF-3084-41BF-89CA-D0E5F24FBF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E965DFF-3084-41BF-89CA-D0E5F24FBF42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

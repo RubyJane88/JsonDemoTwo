@@ -1,0 +1,18 @@
+10/10/2021 22:43:52 +02:00 Application Starting
+10/10/2021 22:43:53 +02:00 Now listening on: "https://localhost:5001"
+10/10/2021 22:43:53 +02:00 Now listening on: "http://localhost:5000"
+10/10/2021 22:43:53 +02:00 Application started. Press Ctrl+C to shut down.
+10/10/2021 22:43:53 +02:00 Hosting environment: "Development"
+10/10/2021 22:43:53 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/10/2021 22:43:54 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/10/2021 22:43:54 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 320.9520ms
+10/10/2021 22:43:55 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/10/2021 22:43:55 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 170.8337ms
+10/10/2021 22:44:01 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+10/10/2021 22:44:01 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.WeatherForecastController.Get (JsonDemoTwo.WebApi)"'
+10/10/2021 22:44:01 +02:00 Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[JsonDemoTwo.WeatherForecast] Get()" on controller "JsonDemoTwo.Controllers.WeatherForecastController" ("JsonDemoTwo.WebApi").
+10/10/2021 22:44:01 +02:00 Executing "ObjectResult", writing value of type '"JsonDemoTwo.WeatherForecast[]"'.
+10/10/2021 22:44:01 +02:00 Executed action "JsonDemoTwo.Controllers.WeatherForecastController.Get (JsonDemoTwo.WebApi)" in 37.7976ms
+10/10/2021 22:44:01 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.WeatherForecastController.Get (JsonDemoTwo.WebApi)"'
+10/10/2021 22:44:01 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 134.2035ms
+10/10/2021 22:45:14 +02:00 Application is shutting down...

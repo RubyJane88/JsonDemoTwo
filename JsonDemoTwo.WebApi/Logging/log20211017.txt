@@ -1,0 +1,1582 @@
+10/17/2021 17:29:11 +02:00 Application Starting
+10/17/2021 17:29:12 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 17:29:12 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 29
+10/17/2021 17:29:42 +02:00 Application Starting
+10/17/2021 17:29:43 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 17:29:43 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 29
+10/17/2021 17:30:08 +02:00 Application Starting
+10/17/2021 17:30:09 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 17:30:09 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 29
+10/17/2021 17:31:13 +02:00 Application Starting
+10/17/2021 17:31:15 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 17:31:15 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 29
+10/17/2021 17:32:15 +02:00 Application Starting
+10/17/2021 17:32:15 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 17:32:15 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 29
+10/17/2021 17:34:33 +02:00 Application Starting
+10/17/2021 17:34:33 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 17:34:33 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 80
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 29
+10/17/2021 17:38:32 +02:00 Application Starting
+10/17/2021 17:38:32 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 17:38:32 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:25:09 +02:00 Application Starting
+10/17/2021 20:25:10 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 20:25:10 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:27:38 +02:00 Application Starting
+10/17/2021 20:27:38 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 20:27:38 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:29:09 +02:00 Application Starting
+10/17/2021 20:29:09 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 20:29:09 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:31:11 +02:00 Application Starting
+10/17/2021 20:31:12 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 20:31:12 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:31:42 +02:00 Application Starting
+10/17/2021 20:31:42 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 20:31:42 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:35:10 +02:00 Application Starting
+10/17/2021 20:35:10 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 20:35:10 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:36:24 +02:00 Application Starting
+10/17/2021 20:36:25 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 20:36:25 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 20:36:57 +02:00 Application Starting
+10/17/2021 20:36:57 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 20:36:57 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 20:36:57 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 20:36:57 +02:00 Hosting environment: "Development"
+10/17/2021 20:36:57 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 20:36:58 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 20:36:58 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 218.5900ms
+10/17/2021 20:36:59 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 20:36:59 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.2511ms
+10/17/2021 20:37:12 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/Albums/albums - -
+10/17/2021 20:37:12 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/17/2021 20:37:12 +02:00 Route matched with "{action = \"GetAlbums\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAlbums()" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:37:13 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:37:14 +02:00 Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Title], [a].[UserId]
+FROM [Album] AS [a]"
+10/17/2021 20:37:14 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.AlbumDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/17/2021 20:37:14 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)" in 2241.0118ms
+10/17/2021 20:37:14 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/17/2021 20:37:14 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/Albums/albums - - - 200 - application/json;+charset=utf-8 2339.3837ms
+10/17/2021 20:38:13 +02:00 Application is shutting down...
+10/17/2021 20:38:24 +02:00 Application Starting
+10/17/2021 20:38:25 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 20:38:25 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 20:38:25 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 20:38:25 +02:00 Hosting environment: "Development"
+10/17/2021 20:38:25 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 20:38:26 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 20:38:26 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 270.6217ms
+10/17/2021 20:38:27 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 20:38:27 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.2111ms
+10/17/2021 20:38:37 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/albums - -
+10/17/2021 20:38:37 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/17/2021 20:38:38 +02:00 Route matched with "{action = \"GetAlbums\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAlbums()" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:38:39 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:38:39 +02:00 Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Title], [a].[UserId]
+FROM [Album] AS [a]"
+10/17/2021 20:38:39 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.AlbumDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/17/2021 20:38:40 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)" in 1991.1406ms
+10/17/2021 20:38:40 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/17/2021 20:38:40 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/albums - - - 200 - application/json;+charset=utf-8 2084.3049ms
+10/17/2021 20:38:46 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/albums application/json 462
+10/17/2021 20:38:46 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.PostAlbum (JsonDemoTwo.WebApi)"'
+10/17/2021 20:38:46 +02:00 Route matched with "{action = \"PostAlbum\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostAlbum(JsonDemoTwo.Models.Entities.Album)" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:38:46 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:38:46 +02:00 Executed DbCommand ("66"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Addresses] ([City], [Street], [Suite], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Addresses]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 20:38:46 +02:00 Executed DbCommand ("6"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Companies] ([Bs], [CatchPhrase], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 20:38:46 +02:00 Executed DbCommand ("11"ms) [Parameters=["@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 55), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([AddressId], [CompanyId], [Email], [Name], [Phone], [UserName], [Website])
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 20:38:46 +02:00 Executed DbCommand ("4"ms) [Parameters=["@p10='?' (Size = 4000), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Album] ([Title], [UserId])
+VALUES (@p10, @p11);
+SELECT [Id]
+FROM [Album]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 20:38:46 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.AlbumDto"'.
+10/17/2021 20:38:46 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.PostAlbum (JsonDemoTwo.WebApi)" in 577.3925ms
+10/17/2021 20:38:46 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.PostAlbum (JsonDemoTwo.WebApi)"'
+10/17/2021 20:38:46 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/albums application/json 462 - 200 - application/json;+charset=utf-8 603.1012ms
+10/17/2021 20:38:57 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/albums/1 - -
+10/17/2021 20:38:57 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:38:57 +02:00 Route matched with "{action = \"GetAlbumById\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAlbumById(Int32)" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:38:57 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:38:57 +02:00 Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Title], [a].[UserId]
+FROM [Album] AS [a]
+WHERE [a].[Id] = @__p_0"
+10/17/2021 20:38:57 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.AlbumDto"'.
+10/17/2021 20:38:57 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)" in 162.6426ms
+10/17/2021 20:38:57 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:38:57 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/albums/1 - - - 200 - application/json;+charset=utf-8 179.3640ms
+10/17/2021 20:39:06 +02:00 Request starting HTTP/1.1 DELETE https://localhost:5001/albums/1 - -
+10/17/2021 20:39:06 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.DeleteAlbum (JsonDemoTwo.WebApi)"'
+10/17/2021 20:39:06 +02:00 Route matched with "{action = \"DeleteAlbum\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAlbum(Int32)" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:39:06 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:39:06 +02:00 Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Album] AS [a]
+        WHERE [a].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+10/17/2021 20:39:06 +02:00 Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Title], [a].[UserId]
+FROM [Album] AS [a]
+WHERE [a].[Id] = @__p_0"
+10/17/2021 20:39:06 +02:00 Executed DbCommand ("14"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Album]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+10/17/2021 20:39:07 +02:00 Executing HttpStatusCodeResult, setting HTTP status code 204
+10/17/2021 20:39:07 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.DeleteAlbum (JsonDemoTwo.WebApi)" in 107.3248ms
+10/17/2021 20:39:07 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.DeleteAlbum (JsonDemoTwo.WebApi)"'
+10/17/2021 20:39:07 +02:00 Request finished HTTP/1.1 DELETE https://localhost:5001/albums/1 - - - 204 - - 112.7361ms
+10/17/2021 20:39:17 +02:00 Application is shutting down...
+10/17/2021 20:40:26 +02:00 Application Starting
+10/17/2021 20:40:26 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 20:40:26 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 20:40:26 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 20:40:26 +02:00 Hosting environment: "Development"
+10/17/2021 20:40:26 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 20:40:27 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 20:40:27 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 207.5569ms
+10/17/2021 20:40:29 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 20:40:29 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.5266ms
+10/17/2021 20:40:36 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/photos - -
+10/17/2021 20:40:36 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/17/2021 20:40:36 +02:00 Route matched with "{action = \"GetAllPhotos\", controller = \"Photos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPhotos(System.String)" on controller "JsonDemoTwo.Controllers.PhotosController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:40:38 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:40:38 +02:00 Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photo] AS [p]"
+10/17/2021 20:40:38 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.PhotoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/17/2021 20:40:38 +02:00 Executed action "JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)" in 1987.2578ms
+10/17/2021 20:40:38 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/17/2021 20:40:38 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/photos - - - 200 - application/json;+charset=utf-8 2098.5914ms
+10/17/2021 20:40:45 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/photos/1 - -
+10/17/2021 20:40:45 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PhotosController.GetPhotoById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:40:45 +02:00 Route matched with "{action = \"GetPhotoById\", controller = \"Photos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPhotoById(Int32)" on controller "JsonDemoTwo.Controllers.PhotosController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:40:45 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:40:45 +02:00 Executed DbCommand ("37"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photo] AS [p]
+WHERE [p].[Id] = @__p_0"
+10/17/2021 20:40:46 +02:00 Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+10/17/2021 20:40:46 +02:00 Executed action "JsonDemoTwo.Controllers.PhotosController.GetPhotoById (JsonDemoTwo.WebApi)" in 217.1631ms
+10/17/2021 20:40:46 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PhotosController.GetPhotoById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:40:46 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/photos/1 - - - 404 - application/problem+json;+charset=utf-8 228.4577ms
+10/17/2021 20:41:12 +02:00 Application is shutting down...
+10/17/2021 20:41:27 +02:00 Application Starting
+10/17/2021 20:41:29 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 20:41:29 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 20:41:29 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 20:41:29 +02:00 Hosting environment: "Development"
+10/17/2021 20:41:29 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 20:41:30 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 20:41:30 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 268.2028ms
+10/17/2021 20:41:32 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 20:41:32 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.1925ms
+10/17/2021 20:41:50 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/photos/1 - -
+10/17/2021 20:41:50 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PhotosController.GetPhotoById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:41:50 +02:00 Route matched with "{action = \"GetPhotoById\", controller = \"Photos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPhotoById(Int32)" on controller "JsonDemoTwo.Controllers.PhotosController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:42:32 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:42:33 +02:00 Executed DbCommand ("57"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photo] AS [p]
+WHERE [p].[Id] = @__p_0"
+10/17/2021 20:43:48 +02:00 Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+10/17/2021 20:43:48 +02:00 Executed action "JsonDemoTwo.Controllers.PhotosController.GetPhotoById (JsonDemoTwo.WebApi)" in 118549.4971ms
+10/17/2021 20:43:48 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PhotosController.GetPhotoById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:43:48 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/photos/1 - - - 404 - application/problem+json;+charset=utf-8 118632.8368ms
+10/17/2021 20:44:21 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/albums/1 - -
+10/17/2021 20:44:21 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:44:21 +02:00 Route matched with "{action = \"GetAlbumById\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAlbumById(Int32)" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/17/2021 20:44:21 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 20:44:21 +02:00 Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Title], [a].[UserId]
+FROM [Album] AS [a]
+WHERE [a].[Id] = @__p_0"
+10/17/2021 20:44:21 +02:00 Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+10/17/2021 20:44:21 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)" in 42.7817ms
+10/17/2021 20:44:21 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)"'
+10/17/2021 20:44:21 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/albums/1 - - - 404 - application/problem+json;+charset=utf-8 219.4946ms
+10/17/2021 20:45:00 +02:00 Application Starting
+10/17/2021 20:45:00 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 20:45:00 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 20:45:00 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 20:45:00 +02:00 Hosting environment: "Development"
+10/17/2021 20:45:00 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 20:45:01 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 20:45:01 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 318.7668ms
+10/17/2021 20:45:02 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 20:45:03 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.5135ms
+10/17/2021 20:45:08 +02:00 Application is shutting down...
+10/17/2021 21:06:06 +02:00 Application Starting
+10/17/2021 21:06:07 +02:00 Application startup exception
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+10/17/2021 21:06:07 +02:00 The Application failed to start
+System.ArgumentException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character. (Parameter 'routeTemplate')
+ ---> Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: There is an incomplete parameter in the route template. Check that each '{' character has a matching '}' character.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Routing.Template.TemplateParser.Parse(String routeTemplate)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.ParameterExistsInAnyRoute(ActionModel action, String parameterName)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferBindingSourceForParameter(ParameterModel parameter)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.InferParameterBindingSources(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.InferParameterBindingInfoConvention.Apply(ActionModel action)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApiBehaviorApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModelFactory.CreateApplicationModel(IEnumerable`1 controllerTypes)
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.GetChangeToken()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.<>c__DisplayClass11_0.<Subscribe>b__0()
+   at Microsoft.Extensions.Primitives.ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Subscribe()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource..ctor(ControllerActionEndpointDataSourceIdProvider dataSourceIdProvider, IActionDescriptorCollectionProvider actions, ActionEndpointFactory endpointFactory, OrderedEndpointsSequenceProvider orderSequence)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.GetOrCreateDataSource(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.ControllerEndpointRouteBuilderExtensions.MapControllers(IEndpointRouteBuilder endpoints)
+   at JsonDemoTwo.Startup.<>c.<Configure>b__5_1(IEndpointRouteBuilder endpoints) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at JsonDemoTwo.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Startup.cs:line 74
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at JsonDemoTwo.Program.Main(String[] args) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Program.cs:line 25
+10/17/2021 21:10:12 +02:00 Application Starting
+10/17/2021 21:10:14 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 21:10:14 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 21:10:14 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 21:10:14 +02:00 Hosting environment: "Development"
+10/17/2021 21:10:14 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 21:10:15 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 21:10:15 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 306.1954ms
+10/17/2021 21:10:16 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 21:10:16 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.8026ms
+10/17/2021 21:10:34 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/posts application/json 482
+10/17/2021 21:10:34 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PostsController.PostPost (JsonDemoTwo.WebApi)"'
+10/17/2021 21:10:34 +02:00 Route matched with "{action = \"PostPost\", controller = \"Posts\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPost(JsonDemoTwo.Models.Entities.Post)" on controller "JsonDemoTwo.Controllers.PostsController" ("JsonDemoTwo.WebApi").
+10/17/2021 21:10:35 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 21:10:35 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.PostDto"'.
+10/17/2021 21:10:35 +02:00 Executed action "JsonDemoTwo.Controllers.PostsController.PostPost (JsonDemoTwo.WebApi)" in 1364.5992ms
+10/17/2021 21:10:35 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PostsController.PostPost (JsonDemoTwo.WebApi)"'
+10/17/2021 21:10:35 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/posts application/json 482 - 200 - application/json;+charset=utf-8 1474.9773ms
+10/17/2021 21:10:46 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/users application/json 361
+10/17/2021 21:10:46 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.PostUser (JsonDemoTwo.WebApi)"'
+10/17/2021 21:10:46 +02:00 Route matched with "{action = \"PostUser\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostUser(JsonDemoTwo.Models.Entities.User)" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/17/2021 21:10:46 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 21:10:47 +02:00 Executed DbCommand ("70"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Addresses] ([City], [Street], [Suite], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Addresses]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 21:10:47 +02:00 Executed DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Companies] ([Bs], [CatchPhrase], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 21:10:47 +02:00 Executed DbCommand ("3"ms) [Parameters=["@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 55), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([AddressId], [CompanyId], [Email], [Name], [Phone], [UserName], [Website])
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 21:10:47 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.UserDto"'.
+10/17/2021 21:10:47 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.PostUser (JsonDemoTwo.WebApi)" in 852.752ms
+10/17/2021 21:10:47 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.PostUser (JsonDemoTwo.WebApi)"'
+10/17/2021 21:10:47 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/users application/json 361 - 200 - application/json;+charset=utf-8 868.9718ms
+10/17/2021 21:11:04 +02:00 Application is shutting down...
+10/17/2021 21:14:40 +02:00 Application Starting
+10/17/2021 21:14:40 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 21:14:40 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 21:14:40 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 21:14:40 +02:00 Hosting environment: "Development"
+10/17/2021 21:14:40 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 21:14:41 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 21:14:41 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 280.3085ms
+10/17/2021 21:14:42 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 21:14:42 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.1477ms
+10/17/2021 21:14:52 +02:00 Request starting HTTP/1.1 DELETE https://localhost:5001/users/1 - -
+10/17/2021 21:14:52 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.DeleteUser (JsonDemoTwo.WebApi)"'
+10/17/2021 21:14:52 +02:00 Route matched with "{action = \"DeleteUser\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUser(Int32)" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/17/2021 21:14:53 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 21:14:54 +02:00 Executed DbCommand ("66"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+10/17/2021 21:14:54 +02:00 Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AddressId], [u].[CompanyId], [u].[Email], [u].[Name], [u].[Phone], [u].[UserName], [u].[Website]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0"
+10/17/2021 21:14:54 +02:00 Executed DbCommand ("13"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [User]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+10/17/2021 21:14:54 +02:00 Executing HttpStatusCodeResult, setting HTTP status code 204
+10/17/2021 21:14:54 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.DeleteUser (JsonDemoTwo.WebApi)" in 2514.3068ms
+10/17/2021 21:14:54 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.DeleteUser (JsonDemoTwo.WebApi)"'
+10/17/2021 21:14:54 +02:00 Request finished HTTP/1.1 DELETE https://localhost:5001/users/1 - - - 204 - - 2640.1639ms
+10/17/2021 21:15:03 +02:00 Application is shutting down...
+10/17/2021 22:39:44 +02:00 Application Starting
+10/17/2021 22:39:45 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 22:39:45 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 22:39:45 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 22:39:45 +02:00 Hosting environment: "Development"
+10/17/2021 22:39:45 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 22:39:45 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 22:39:46 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 289.3626ms
+10/17/2021 22:39:46 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+10/17/2021 22:39:46 +02:00 Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+10/17/2021 22:39:46 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 100.2579ms
+10/17/2021 22:39:46 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 22:39:47 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.8338ms
+10/17/2021 22:39:54 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/todos - -
+10/17/2021 22:39:54 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)"'
+10/17/2021 22:39:54 +02:00 Route matched with "{action = \"GetTodos\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTodos()" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/17/2021 22:39:56 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 22:39:56 +02:00 Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Completed], [t].[Title], [t].[UserId]
+FROM [Todos] AS [t]"
+10/17/2021 22:39:56 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.TodoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/17/2021 22:39:56 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)" in 2101.5868ms
+10/17/2021 22:39:56 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)"'
+10/17/2021 22:39:56 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/todos - - - 200 - application/json;+charset=utf-8 2207.0267ms
+10/17/2021 22:49:57 +02:00 Application is shutting down...
+10/17/2021 22:50:04 +02:00 Application Starting
+10/17/2021 22:50:05 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 22:50:05 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 22:50:05 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 22:50:05 +02:00 Hosting environment: "Development"
+10/17/2021 22:50:05 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 22:50:06 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 22:50:06 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 282.0176ms
+10/17/2021 22:50:07 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 22:50:07 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 225.6905ms
+10/17/2021 22:50:17 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/todos/1 - -
+10/17/2021 22:50:17 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodoById (JsonDemoTwo.WebApi)"'
+10/17/2021 22:50:17 +02:00 Route matched with "{action = \"GetTodoById\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTodoById(Int32)" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/17/2021 22:50:18 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 22:50:19 +02:00 Executed DbCommand ("67"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[Completed], [t].[Title], [t].[UserId]
+FROM [Todos] AS [t]
+WHERE [t].[Id] = @__p_0"
+10/17/2021 22:50:19 +02:00 Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+10/17/2021 22:50:19 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.GetTodoById (JsonDemoTwo.WebApi)" in 2264.5711ms
+10/17/2021 22:50:19 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodoById (JsonDemoTwo.WebApi)"'
+10/17/2021 22:50:19 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/todos/1 - - - 404 - application/problem+json;+charset=utf-8 2387.2496ms
+10/17/2021 22:50:38 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/users/1 - -
+10/17/2021 22:50:38 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.GetUserById (JsonDemoTwo.WebApi)"'
+10/17/2021 22:50:38 +02:00 Route matched with "{action = \"GetUserById\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserById(Int32)" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/17/2021 22:50:38 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 22:50:38 +02:00 Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AddressId], [u].[CompanyId], [u].[Email], [u].[Name], [u].[Phone], [u].[UserName], [u].[Website]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0"
+10/17/2021 22:50:38 +02:00 Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+10/17/2021 22:50:38 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.GetUserById (JsonDemoTwo.WebApi)" in 62.0791ms
+10/17/2021 22:50:38 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.GetUserById (JsonDemoTwo.WebApi)"'
+10/17/2021 22:50:38 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/users/1 - - - 404 - application/problem+json;+charset=utf-8 72.5262ms
+10/17/2021 22:50:54 +02:00 Application is shutting down...
+10/17/2021 23:22:50 +02:00 Application Starting
+10/17/2021 23:22:51 +02:00 Now listening on: "https://localhost:5001"
+10/17/2021 23:22:51 +02:00 Now listening on: "http://localhost:5000"
+10/17/2021 23:22:51 +02:00 Application started. Press Ctrl+C to shut down.
+10/17/2021 23:22:51 +02:00 Hosting environment: "Development"
+10/17/2021 23:22:51 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/17/2021 23:22:52 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/17/2021 23:22:52 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 424.2169ms
+10/17/2021 23:22:53 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/17/2021 23:22:53 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.9546ms
+10/17/2021 23:23:02 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/todos application/json 483
+10/17/2021 23:23:02 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)"'
+10/17/2021 23:23:02 +02:00 Route matched with "{action = \"PostTodo\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostTodo(JsonDemoTwo.Models.Entities.Todo)" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/17/2021 23:23:03 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 23:23:04 +02:00 Executed DbCommand ("65"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Address] ([City], [Street], [Suite], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Address]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 23:23:04 +02:00 Executed DbCommand ("7"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Company] ([Bs], [CatchPhrase], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Company]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 23:23:04 +02:00 Executed DbCommand ("8"ms) [Parameters=["@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 55), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([AddressId], [CompanyId], [Email], [Name], [Phone], [UserName], [Website])
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 23:23:04 +02:00 Executed DbCommand ("7"ms) [Parameters=["@p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Todos] ([Completed], [Title], [UserId])
+VALUES (@p10, @p11, @p12);
+SELECT [Id]
+FROM [Todos]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/17/2021 23:23:04 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.TodoDto"'.
+10/17/2021 23:23:04 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)" in 2225.8982ms
+10/17/2021 23:23:04 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)"'
+10/17/2021 23:23:04 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/todos application/json 483 - 200 - application/json;+charset=utf-8 2349.2792ms
+10/17/2021 23:23:17 +02:00 Request starting HTTP/1.1 DELETE https://localhost:5001/todos/1 - -
+10/17/2021 23:23:17 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.DeleteTodo (JsonDemoTwo.WebApi)"'
+10/17/2021 23:23:17 +02:00 Route matched with "{action = \"DeleteTodo\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTodo(Int32)" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/17/2021 23:23:17 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/17/2021 23:23:17 +02:00 Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Todos] AS [t]
+        WHERE [t].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+10/17/2021 23:23:17 +02:00 Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[Completed], [t].[Title], [t].[UserId]
+FROM [Todos] AS [t]
+WHERE [t].[Id] = @__p_0"
+10/17/2021 23:23:17 +02:00 Executed DbCommand ("13"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Todos]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+10/17/2021 23:23:17 +02:00 Executing HttpStatusCodeResult, setting HTTP status code 204
+10/17/2021 23:23:17 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.DeleteTodo (JsonDemoTwo.WebApi)" in 564.0277ms
+10/17/2021 23:23:17 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.DeleteTodo (JsonDemoTwo.WebApi)"'
+10/17/2021 23:23:17 +02:00 Request finished HTTP/1.1 DELETE https://localhost:5001/todos/1 - - - 204 - - 575.9093ms
+10/17/2021 23:23:33 +02:00 Application is shutting down...

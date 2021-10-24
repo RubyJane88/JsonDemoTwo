@@ -1,0 +1,13 @@
+10/20/2021 18:00:01 +02:00 Application Starting
+10/20/2021 18:00:03 +02:00 Now listening on: "https://localhost:5001"
+10/20/2021 18:00:03 +02:00 Now listening on: "http://localhost:5000"
+10/20/2021 18:00:03 +02:00 Application started. Press Ctrl+C to shut down.
+10/20/2021 18:00:03 +02:00 Hosting environment: "Development"
+10/20/2021 18:00:03 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/20/2021 18:00:05 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/20/2021 18:00:05 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 123.8227ms
+10/20/2021 18:00:05 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+10/20/2021 18:00:05 +02:00 Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+10/20/2021 18:00:05 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 312.0521ms
+10/20/2021 18:00:06 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/20/2021 18:00:06 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 210.5786ms
