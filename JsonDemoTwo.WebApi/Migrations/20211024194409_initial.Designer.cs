@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JsonDemoTwo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211024162658_initial")]
+    [Migration("20211024194409_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,6 +74,14 @@ namespace JsonDemoTwo.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Albums");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Title = "Down the memory lane",
+                            UserId = 1
+                        });
                 });
 
             modelBuilder.Entity("JsonDemoTwo.Models.Entities.Comment", b =>
@@ -100,6 +108,16 @@ namespace JsonDemoTwo.Migrations
                     b.HasIndex("PostId");
 
                     b.ToTable("Comments");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Body = "To be or not to be",
+                            Email = "ruben@yahoo.com",
+                            Name = "Id labore ex et",
+                            PostId = 1
+                        });
                 });
 
             modelBuilder.Entity("JsonDemoTwo.Models.Entities.Company", b =>
@@ -184,6 +202,16 @@ namespace JsonDemoTwo.Migrations
                     b.HasIndex("AlbumId");
 
                     b.ToTable("Photos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AlbumId = 1,
+                            ThumbnailUrl = "http://via.placeholder.com/49",
+                            Title = "At the beach",
+                            Url = "https://www.ruben.com"
+                        });
                 });
 
             modelBuilder.Entity("JsonDemoTwo.Models.Entities.Post", b =>
@@ -210,6 +238,15 @@ namespace JsonDemoTwo.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Posts");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Body = "A tale of two cities",
+                            Title = "Twin Cities",
+                            UserId = 1
+                        });
                 });
 
             modelBuilder.Entity("JsonDemoTwo.Models.Entities.Todo", b =>

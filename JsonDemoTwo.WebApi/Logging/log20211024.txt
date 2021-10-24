@@ -970,3 +970,358 @@ WHERE [u].[Id] = @__p_0"
 10/24/2021 20:12:46 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.GetUserById (JsonDemoTwo.WebApi)" in 719.1188ms
 10/24/2021 20:12:46 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.GetUserById (JsonDemoTwo.WebApi)"'
 10/24/2021 20:12:46 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/users/1 - - - 200 - application/json;+charset=utf-8 891.1904ms
+10/24/2021 20:16:21 +02:00 Application Starting
+10/24/2021 20:16:23 +02:00 Now listening on: "https://localhost:5001"
+10/24/2021 20:16:23 +02:00 Now listening on: "http://localhost:5000"
+10/24/2021 20:16:23 +02:00 Application started. Press Ctrl+C to shut down.
+10/24/2021 20:16:23 +02:00 Hosting environment: "Development"
+10/24/2021 20:16:23 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/24/2021 20:16:24 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/24/2021 20:16:24 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 144.5962ms
+10/24/2021 20:16:25 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/24/2021 20:16:25 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.9257ms
+10/24/2021 20:16:32 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/todos - -
+10/24/2021 20:16:32 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)"'
+10/24/2021 20:16:32 +02:00 Route matched with "{action = \"GetTodos\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTodos()" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/24/2021 20:16:33 +02:00 No type was specified for the decimal property '"Lat"' on entity type '"Geo"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+10/24/2021 20:16:33 +02:00 No type was specified for the decimal property '"Lng"' on entity type '"Geo"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+10/24/2021 20:16:33 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 20:16:34 +02:00 Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Completed], [t].[Title], [t].[UserId]
+FROM [Todos] AS [t]"
+10/24/2021 20:16:34 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.TodoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 20:16:34 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)" in 1719.1874ms
+10/24/2021 20:16:34 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)"'
+10/24/2021 20:16:34 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/todos - - - 200 - application/json;+charset=utf-8 1798.9103ms
+10/24/2021 20:17:53 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/todos application/json 611
+10/24/2021 20:17:53 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)"'
+10/24/2021 20:17:53 +02:00 Route matched with "{action = \"PostTodo\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostTodo(JsonDemoTwo.Models.Entities.Todo)" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/24/2021 20:17:53 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("20"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Address] ([City], [Street], [Suite], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Address]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Company] ([Bs], [CatchPhrase], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Company]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("8"ms) [Parameters=["@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Geo] ([Lat], [Lng])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Geo]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("3"ms) [Parameters=["@p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 55), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([AddressId], [CompanyId], [Email], [GeoId], [Name], [Phone], [UserName], [Website])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:17:53 +02:00 Failed executing DbCommand ("10"ms) [Parameters=["@p10='?' (DbType = Int32), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Todos] ([Id], [Completed], [Title], [UserId])
+VALUES (@p10, @p11, @p12, @p13);"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[AddressId], [u].[CompanyId], [u].[Email], [u].[GeoId], [u].[Name], [u].[Phone], [u].[UserName], [u].[Website]
+FROM [User] AS [u]"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Title], [a].[UserId]
+FROM [Albums] AS [a]"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photos] AS [p]"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Body], [p].[Title], [p].[UserId]
+FROM [Posts] AS [p]"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Body], [c].[Email], [c].[Name], [c].[PostId]
+FROM [Comments] AS [c]"
+10/24/2021 20:17:53 +02:00 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Completed], [t].[Title], [t].[UserId]
+FROM [Todos] AS [t]"
+10/24/2021 20:17:53 +02:00 An exception occurred in the database while saving changes for context type '"JsonDemoTwo.Models.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Todos' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:280fb4a2-7d63-429b-97b5-739153f20f7a
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Todos' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:280fb4a2-7d63-429b-97b5-739153f20f7a
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+10/24/2021 20:17:54 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)" in 1188.9792ms
+10/24/2021 20:17:54 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)"'
+10/24/2021 20:17:54 +02:00 An unhandled exception has occurred while executing the request.
+System.Exception: Error adding new todo
+   at JsonDemoTwo.Repositories.TodoRepository.CreateAsync(Todo todo) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Repositories/TodoRepository.cs:line 69
+   at JsonDemoTwo.Controllers.TodosController.PostTodo(Todo todo) in /Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi/Controllers/TodosController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2021 20:17:54 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/todos application/json 611 - 500 - text/plain 1258.7958ms
+10/24/2021 20:18:29 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/todos application/json 610
+10/24/2021 20:18:29 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)"'
+10/24/2021 20:18:29 +02:00 Route matched with "{action = \"PostTodo\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostTodo(JsonDemoTwo.Models.Entities.Todo)" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/24/2021 20:18:29 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 20:18:29 +02:00 Executed DbCommand ("26"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Address] ([City], [Street], [Suite], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Address]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:18:29 +02:00 Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Company] ([Bs], [CatchPhrase], [Name])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Company]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:18:29 +02:00 Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Geo] ([Lat], [Lng])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Geo]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:18:29 +02:00 Executed DbCommand ("2"ms) [Parameters=["@p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 55), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([AddressId], [CompanyId], [Email], [GeoId], [Name], [Phone], [UserName], [Website])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:18:29 +02:00 Executed DbCommand ("6"ms) [Parameters=["@p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Todos] ([Completed], [Title], [UserId])
+VALUES (@p10, @p11, @p12);
+SELECT [Id]
+FROM [Todos]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+10/24/2021 20:18:29 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.TodoDto"'.
+10/24/2021 20:18:29 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)" in 89.2634ms
+10/24/2021 20:18:29 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.PostTodo (JsonDemoTwo.WebApi)"'
+10/24/2021 20:18:29 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/todos application/json 610 - 200 - application/json;+charset=utf-8 93.4152ms
+10/24/2021 20:20:35 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/users - -
+10/24/2021 20:20:35 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)"'
+10/24/2021 20:20:35 +02:00 Route matched with "{action = \"GetUsers\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers()" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/24/2021 20:20:35 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 20:20:35 +02:00 Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[AddressId], [u].[CompanyId], [u].[Email], [u].[GeoId], [u].[Name], [u].[Phone], [u].[UserName], [u].[Website], [a].[Id], [a].[City], [a].[Street], [a].[Suite], [a].[ZipCode], [c].[Id], [c].[Bs], [c].[CatchPhrase], [c].[Name], [g].[Id], [g].[Lat], [g].[Lng]
+FROM [User] AS [u]
+INNER JOIN [Address] AS [a] ON [u].[AddressId] = [a].[Id]
+INNER JOIN [Company] AS [c] ON [u].[CompanyId] = [c].[Id]
+INNER JOIN [Geo] AS [g] ON [u].[GeoId] = [g].[Id]"
+10/24/2021 20:20:35 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.UserDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 20:20:35 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)" in 186.441ms
+10/24/2021 20:20:35 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)"'
+10/24/2021 20:20:35 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/users - - - 200 - application/json;+charset=utf-8 193.6228ms
+10/24/2021 20:23:24 +02:00 Request starting HTTP/1.1 DELETE https://localhost:5001/users/2 - -
+10/24/2021 20:23:24 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.DeleteUser (JsonDemoTwo.WebApi)"'
+10/24/2021 20:23:24 +02:00 Route matched with "{action = \"DeleteUser\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUser(Int32)" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/24/2021 20:23:24 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 20:23:24 +02:00 Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Id] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+10/24/2021 20:23:24 +02:00 Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AddressId], [u].[CompanyId], [u].[Email], [u].[GeoId], [u].[Name], [u].[Phone], [u].[UserName], [u].[Website]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0"
+10/24/2021 20:23:24 +02:00 Executed DbCommand ("22"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [User]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+10/24/2021 20:23:24 +02:00 Executing HttpStatusCodeResult, setting HTTP status code 204
+10/24/2021 20:23:24 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.DeleteUser (JsonDemoTwo.WebApi)" in 128.1108ms
+10/24/2021 20:23:24 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.DeleteUser (JsonDemoTwo.WebApi)"'
+10/24/2021 20:23:24 +02:00 Request finished HTTP/1.1 DELETE https://localhost:5001/users/2 - - - 204 - - 136.0027ms
+10/24/2021 20:33:48 +02:00 Application Starting
+10/24/2021 20:33:48 +02:00 Now listening on: "https://localhost:5001"
+10/24/2021 20:33:48 +02:00 Now listening on: "http://localhost:5000"
+10/24/2021 20:33:48 +02:00 Application started. Press Ctrl+C to shut down.
+10/24/2021 20:33:48 +02:00 Hosting environment: "Development"
+10/24/2021 20:33:48 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/24/2021 20:33:49 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/24/2021 20:33:50 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 335.9750ms
+10/24/2021 20:33:51 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/24/2021 20:33:51 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 285.7302ms
+10/24/2021 20:40:35 +02:00 Application is shutting down...
+10/24/2021 21:34:54 +02:00 Application Starting
+10/24/2021 21:34:54 +02:00 Now listening on: "https://localhost:5001"
+10/24/2021 21:34:54 +02:00 Now listening on: "http://localhost:5000"
+10/24/2021 21:34:54 +02:00 Application started. Press Ctrl+C to shut down.
+10/24/2021 21:34:54 +02:00 Hosting environment: "Development"
+10/24/2021 21:34:54 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/24/2021 21:34:55 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/24/2021 21:34:55 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 246.9369ms
+10/24/2021 21:34:56 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/24/2021 21:34:56 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 218.8985ms
+10/24/2021 21:36:01 +02:00 Application is shutting down...
+10/24/2021 21:44:32 +02:00 Application Starting
+10/24/2021 21:44:34 +02:00 Now listening on: "https://localhost:5001"
+10/24/2021 21:44:34 +02:00 Now listening on: "http://localhost:5000"
+10/24/2021 21:44:34 +02:00 Application started. Press Ctrl+C to shut down.
+10/24/2021 21:44:34 +02:00 Hosting environment: "Development"
+10/24/2021 21:44:34 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/JsonDemoTwo/JsonDemoTwo.WebApi"
+10/24/2021 21:44:35 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/24/2021 21:44:35 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 276.1742ms
+10/24/2021 21:44:36 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/24/2021 21:44:36 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.8098ms
+10/24/2021 21:46:15 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/albums - -
+10/24/2021 21:46:15 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/24/2021 21:46:15 +02:00 Route matched with "{action = \"GetAlbums\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAlbums()" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:46:28 +02:00 No type was specified for the decimal property '"Lat"' on entity type '"Geo"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+10/24/2021 21:46:28 +02:00 No type was specified for the decimal property '"Lng"' on entity type '"Geo"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+10/24/2021 21:46:28 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:46:29 +02:00 Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Title], [a].[UserId]
+FROM [Albums] AS [a]"
+10/24/2021 21:46:39 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.AlbumDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 21:46:39 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)" in 23932.4117ms
+10/24/2021 21:46:39 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbums (JsonDemoTwo.WebApi)"'
+10/24/2021 21:46:39 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/albums - - - 200 - application/json;+charset=utf-8 24014.5752ms
+10/24/2021 21:47:06 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/albums/1 - -
+10/24/2021 21:47:06 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:06 +02:00 Route matched with "{action = \"GetAlbumById\", controller = \"Albums\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAlbumById(Int32)" on controller "JsonDemoTwo.Controllers.AlbumsController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:47:06 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:47:06 +02:00 Executed DbCommand ("45"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[Title], [a].[UserId]
+FROM [Albums] AS [a]
+WHERE [a].[Id] = @__p_0"
+10/24/2021 21:47:06 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.AlbumDto"'.
+10/24/2021 21:47:06 +02:00 Executed action "JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)" in 186.6794ms
+10/24/2021 21:47:06 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.AlbumsController.GetAlbumById (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:06 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/albums/1 - - - 200 - application/json;+charset=utf-8 232.0666ms
+10/24/2021 21:47:17 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/comments - -
+10/24/2021 21:47:17 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.CommentsController.GetComments (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:17 +02:00 Route matched with "{action = \"GetComments\", controller = \"Comments\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments()" on controller "JsonDemoTwo.Controllers.CommentsController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:47:17 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:47:17 +02:00 Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Body], [c].[Email], [c].[Name], [c].[PostId]
+FROM [Comments] AS [c]"
+10/24/2021 21:47:17 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.CommentDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 21:47:17 +02:00 Executed action "JsonDemoTwo.Controllers.CommentsController.GetComments (JsonDemoTwo.WebApi)" in 48.2835ms
+10/24/2021 21:47:17 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.CommentsController.GetComments (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:17 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/comments - - - 200 - application/json;+charset=utf-8 57.3556ms
+10/24/2021 21:47:35 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/comments/1 - -
+10/24/2021 21:47:35 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.CommentsController.GetCommentById (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:35 +02:00 Route matched with "{action = \"GetCommentById\", controller = \"Comments\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCommentById(Int32)" on controller "JsonDemoTwo.Controllers.CommentsController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:47:35 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:47:35 +02:00 Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[Body], [c].[Email], [c].[Name], [c].[PostId]
+FROM [Comments] AS [c]
+WHERE [c].[Id] = @__p_0"
+10/24/2021 21:47:35 +02:00 Executing "OkObjectResult", writing value of type '"JsonDemoTwo.Models.Dtos.CommentDto"'.
+10/24/2021 21:47:35 +02:00 Executed action "JsonDemoTwo.Controllers.CommentsController.GetCommentById (JsonDemoTwo.WebApi)" in 15.8653ms
+10/24/2021 21:47:35 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.CommentsController.GetCommentById (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:35 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/comments/1 - - - 200 - application/json;+charset=utf-8 20.6088ms
+10/24/2021 21:47:44 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/photos - -
+10/24/2021 21:47:44 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:44 +02:00 Route matched with "{action = \"GetAllPhotos\", controller = \"Photos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPhotos(System.String)" on controller "JsonDemoTwo.Controllers.PhotosController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:47:44 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:47:44 +02:00 Executed DbCommand ("101"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[AlbumId], [p].[ThumbnailUrl], [p].[Title], [p].[Url]
+FROM [Photos] AS [p]"
+10/24/2021 21:47:44 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.PhotoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 21:47:44 +02:00 Executed action "JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)" in 136.6294ms
+10/24/2021 21:47:44 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PhotosController.GetAllPhotos (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:44 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/photos - - - 200 - application/json;+charset=utf-8 142.3385ms
+10/24/2021 21:47:58 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/posts - -
+10/24/2021 21:47:58 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.PostsController.GetPosts (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:58 +02:00 Route matched with "{action = \"GetPosts\", controller = \"Posts\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPosts()" on controller "JsonDemoTwo.Controllers.PostsController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:47:58 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:47:58 +02:00 Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Body], [p].[Title], [p].[UserId]
+FROM [Posts] AS [p]"
+10/24/2021 21:47:58 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.PostDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 21:47:58 +02:00 Executed action "JsonDemoTwo.Controllers.PostsController.GetPosts (JsonDemoTwo.WebApi)" in 20.3389ms
+10/24/2021 21:47:58 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.PostsController.GetPosts (JsonDemoTwo.WebApi)"'
+10/24/2021 21:47:58 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/posts - - - 200 - application/json;+charset=utf-8 23.4992ms
+10/24/2021 21:48:06 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/todos - -
+10/24/2021 21:48:06 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)"'
+10/24/2021 21:48:06 +02:00 Route matched with "{action = \"GetTodos\", controller = \"Todos\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTodos()" on controller "JsonDemoTwo.Controllers.TodosController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:48:06 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:48:06 +02:00 Executed DbCommand ("57"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Completed], [t].[Title], [t].[UserId]
+FROM [Todos] AS [t]"
+10/24/2021 21:48:06 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.TodoDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 21:48:06 +02:00 Executed action "JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)" in 79.7969ms
+10/24/2021 21:48:06 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.TodosController.GetTodos (JsonDemoTwo.WebApi)"'
+10/24/2021 21:48:06 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/todos - - - 200 - application/json;+charset=utf-8 87.8932ms
+10/24/2021 21:48:12 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/users - -
+10/24/2021 21:48:12 +02:00 Executing endpoint '"JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)"'
+10/24/2021 21:48:12 +02:00 Route matched with "{action = \"GetUsers\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers()" on controller "JsonDemoTwo.Controllers.UsersController" ("JsonDemoTwo.WebApi").
+10/24/2021 21:48:12 +02:00 Entity Framework Core "5.0.10" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+10/24/2021 21:48:12 +02:00 Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[AddressId], [u].[CompanyId], [u].[Email], [u].[GeoId], [u].[Name], [u].[Phone], [u].[UserName], [u].[Website], [a].[Id], [a].[City], [a].[Street], [a].[Suite], [a].[ZipCode], [c].[Id], [c].[Bs], [c].[CatchPhrase], [c].[Name], [g].[Id], [g].[Lat], [g].[Lng]
+FROM [User] AS [u]
+INNER JOIN [Address] AS [a] ON [u].[AddressId] = [a].[Id]
+INNER JOIN [Company] AS [c] ON [u].[CompanyId] = [c].[Id]
+INNER JOIN [Geo] AS [g] ON [u].[GeoId] = [g].[Id]"
+10/24/2021 21:48:12 +02:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JsonDemoTwo.Models.Dtos.UserDto, JsonDemoTwo.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+10/24/2021 21:48:12 +02:00 Executed action "JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)" in 106.4774ms
+10/24/2021 21:48:12 +02:00 Executed endpoint '"JsonDemoTwo.Controllers.UsersController.GetUsers (JsonDemoTwo.WebApi)"'
+10/24/2021 21:48:12 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/users - - - 200 - application/json;+charset=utf-8 110.4899ms

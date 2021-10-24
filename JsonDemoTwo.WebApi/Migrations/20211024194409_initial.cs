@@ -216,9 +216,29 @@ namespace JsonDemoTwo.Migrations
                 values: new object[] { 1, 1, 1, "ruben@yahoo.com", 1, "Ruben", "9178482318", "Bugsy", "bugsy.com" });
 
             migrationBuilder.InsertData(
+                table: "Albums",
+                columns: new[] { "Id", "Title", "UserId" },
+                values: new object[] { 1, "Down the memory lane", 1 });
+
+            migrationBuilder.InsertData(
+                table: "Posts",
+                columns: new[] { "Id", "Body", "Title", "UserId" },
+                values: new object[] { 1, "A tale of two cities", "Twin Cities", 1 });
+
+            migrationBuilder.InsertData(
                 table: "Todos",
                 columns: new[] { "Id", "Completed", "Title", "UserId" },
                 values: new object[] { 1, true, "Write Practical React Enterprise", 1 });
+
+            migrationBuilder.InsertData(
+                table: "Comments",
+                columns: new[] { "Id", "Body", "Email", "Name", "PostId" },
+                values: new object[] { 1, "To be or not to be", "ruben@yahoo.com", "Id labore ex et", 1 });
+
+            migrationBuilder.InsertData(
+                table: "Photos",
+                columns: new[] { "Id", "AlbumId", "ThumbnailUrl", "Title", "Url" },
+                values: new object[] { 1, 1, "http://via.placeholder.com/49", "At the beach", "https://www.ruben.com" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Albums_UserId",

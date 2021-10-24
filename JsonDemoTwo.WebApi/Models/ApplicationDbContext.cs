@@ -50,8 +50,14 @@ namespace JsonDemoTwo.Models
                  CatchPhrase = "The guards you can trust",
                  Bs = "harness real-time guards"
              }
-            ); 
-            
+            );
+
+            /*Fluent API*/
+            modelBuilder.Entity<User>()
+                .Property(u => u.Name)
+                .IsRequired()
+                .HasMaxLength(55);
+
             modelBuilder.Entity<User>().HasData(
                 new User
                 {
@@ -68,6 +74,8 @@ namespace JsonDemoTwo.Models
                 }
                 
             );
+            
+            
 
             modelBuilder.Entity<Todo>().HasData(
 
@@ -80,7 +88,48 @@ namespace JsonDemoTwo.Models
 
                 }
             );
-               
+
+            modelBuilder.Entity<Album>().HasData(
+                new Album
+                {
+                    Id = 1,
+                    Title = "Down the memory lane",
+                    UserId = 1,
+                }
+            );
+
+            modelBuilder.Entity<Photo>().HasData(
+                new Photo
+                {
+                    Id = 1,
+                    Title = "At the beach",
+                    Url = "https://www.ruben.com",
+                    ThumbnailUrl = "http://via.placeholder.com/49",
+                    AlbumId = 1,
+                }
+            );
+
+            modelBuilder.Entity<Post>().HasData(
+                new Post
+                {
+                    Id = 1,
+                    Title = "Twin Cities",
+                    Body = "A tale of two cities",
+                    UserId = 1,
+                }
+            );
+            
+
+            modelBuilder.Entity<Comment>().HasData(
+                new Comment
+                {
+                    Id = 1,
+                    Name = "Id labore ex et",
+                    Email = "ruben@yahoo.com",
+                    Body = "To be or not to be",
+                    PostId = 1,
+                }
+            );
 
            
 

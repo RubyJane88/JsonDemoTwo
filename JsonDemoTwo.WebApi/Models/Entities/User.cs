@@ -8,10 +8,8 @@ namespace JsonDemoTwo.Models.Entities
     public sealed class User
     {
         public int Id { get; set; }
-
-        [Required(ErrorMessage = "Name is required")]
+        
         [MinLength(3)]
-        [MaxLength(55)]
         public string Name { get; set; }
 
      
@@ -21,6 +19,7 @@ namespace JsonDemoTwo.Models.Entities
         [EmailAddress]
         public string Email { get; set; }
 
+        
         public int AddressId { get; set; }
         public Address Address { get; set; }
 
